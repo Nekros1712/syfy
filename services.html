@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="first year, help, engineering drawing, ed instruments, fy notes, fe notes, c-programming">
+    <meta name="author" content="Samprit JC">
+    <title>shareyourFY</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+</head>
+<body style="background-color: #0EDE4A;">
+    
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: black;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon" style="color: floralwhite;"></span>                
+            </button><span></span>
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="img/Logo.jpg" class="img-fluid" height="150px" width="120px"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link"  href="./index.html"><span class="fa fa-home fa-lg">Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link"  href="./aboutus.html"><span class="fa fa-info fa-lg">About Us</span></a></li>
+                    <li class="nav-item"><a class="nav-link"  href="./team.html"><span class="fa fa-user-circle-o fa-lg">Team</span></a></li>
+                    <li class="nav-item active"><a class="nav-link"  href="#"><span class="fa fa-cogs fa-lg" style="color: #F9AA33;">Services</span></a></li>
+                    <li class="nav-item"><a class="nav-link"  href="./contactus.html"><span class="fa fa-address-card fa-lg">Contact</span></a></li>
+                </ul>
+                <span class="navbar-text">
+                    <a id="login" style="color: #03DAC5;">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: #F9AA33;">
+                <div class="modal-header" style="background-color: rgb(132, 0, 255); color: floralwhite;">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>
+                        <div class="col-12 col-sm-10  align-self-center">
+                            <img src="img/Logo.jpg" class="img-fluid" style="padding-top: 50px;">
+                        </div>
+                    </h1>
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a role="button" id="formbtn" class="btn btn-block nav-link btn-secondary">
+                        <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Start Contributing</samprit>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <div>
+            <div class="leftpad" style="border-bottom: 1px ridge;">
+               <h1 class="offset-1" style="padding-top: 20px; padding-bottom: 20px;">Our Services</h1>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div class="leftpad" style="border-bottom: 1px ridge;">
+               <h4 class="offset-1" style="padding-top: 20px; padding-bottom: 20px; padding-right: 50px;">
+                    Welcome to our services page, here you can take benefit of all the services 
+                    that we provide. As you already know we provide you all with our four templates 
+                    which allows newbies to access various materials available be it notes of subjects, 
+                    instruments used for Engineering Drawing, C language Codes or any other material to 
+                    excel in your chosen stream/subject/topics.<br>
+                    For Seniors or Contributors, We have provided platform for you guys 
+                    to share your materials with the juniors to help them out during their difficult 
+                    time.
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm" style="padding-bottom: 50px;">
+        <div class="card" id="Services">
+            <h2 class="card-header text-white" style="background-color: #720D5D;">Services We Provide</h2>
+            <div class="card-body" style="background-color: rgb(13, 67, 185);">
+                <dl class="row" style="padding-top: 30px;">
+                    <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>Subject Notes</h3></dt>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_note">
+                            <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Access Notes</samprit>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_note">
+                            <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Add Notes</samprit>
+                        </a>
+                    </div>
+                    <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>ED Instruments</h3></dt>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_ed">
+                            <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Borrow Instruments</samprit>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_ed">
+                            <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Share Instruments</samprit>
+                        </a>
+                    </div>
+                    <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>CP Codes/Algo</h3></dt>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_cp">
+                            <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Refer Codes</samprit>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri__cp">
+                            <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Upload Codes</samprit>
+                        </a>
+                    </div>
+                    <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>Extra Materials</h3></dt>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_ext">
+                            <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Access Extraaass</samprit>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                        <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri__ext">
+                            <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Add Extras</samprit>
+                        </a>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About Us</a></li>
+                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              04, Deshmukh complex<br>
+		              Tata Power House, Dombivli<br>
+                      India-421 203<br>
+		              <i class="fa fa-phone fa-lg"></i> +91 865-274-7379<br></i>
+                      <i class="fa fa-fax fa-lg"></i> +91 865-274-7379<br></i>
+		              <i class="fa fa-envelope fa-lg"></i>Email: <a href="mailto:shareyourfy@caring.com">shareyourFY@caring.com</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center5">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/sampritchaurasiya1712"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/Samprit1712"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2020 shareyourFY</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $("#login").click(function(){
+        $('#loginmodal').modal('show');
+    });
+    </script>
+
+</body>
+</html>
