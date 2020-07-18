@@ -92,8 +92,8 @@
                 </div>
                 <div class="col-sm-3"></div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-secondary" id="contri">
-                        <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Contribute</samprit>
+                    <a role="button" class="btn btn-block nav-link btn-secondary" id="formbtn">
+                        <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Start Contributing</samprit>
                     </a>
                 </div>
             </div>
@@ -266,6 +266,70 @@
         </div>
     </footer>
 
+    <div id="form" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: rgb(13, 67, 185);">
+                <div class="modal-header" style="background-color: rgb(132, 0, 255); color: floralwhite;">
+                    <h4 class="modal-title">Services we provide </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="card" id="Services">
+                        <div class="card-body" style="background-color: rgb(13, 67, 185);">
+                            <dl class="row" style="padding-top: 30px;">
+                                <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>Subject Notes</h3></dt>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_note">
+                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Access Notes</samprit>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_note">
+                                        <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Add Notes</samprit>
+                                    </a>
+                                </div>
+                                <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>ED Instruments</h3></dt>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_ed">
+                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Borrow Instruments</samprit>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_ed">
+                                        <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Share Instruments</samprit>
+                                    </a>
+                                </div>
+                                <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>CP Codes/Algo</h3></dt>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_cp">
+                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Refer Codes</samprit>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri__cp">
+                                        <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Upload Codes</samprit>
+                                    </a>
+                                </div>
+                                <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>Extra Materials</h3></dt>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_ext">
+                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Access Extraaass</samprit>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri__ext">
+                                        <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Add Extras</samprit>
+                                    </a>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -273,6 +337,11 @@
         $("#login").click(function(){
         $('#loginmodal').modal('show');
     });
+    </script>
+    <script>
+        $("#formbtn").click(function(){
+        $('#form').modal('show');
+    }); 
     </script>
 
 </body>
