@@ -279,50 +279,227 @@
                         <div class="card-body" style="background-color: rgb(13, 67, 185);">
                             <dl class="row" style="padding-top: 30px;">
                                 <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>Subject Notes</h3></dt>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_note">
-                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Access Notes</samprit>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_note">
+                                <div class="col-12 col-sm-6 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_note_btn">
                                         <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Add Notes</samprit>
                                     </a>
                                 </div>
                                 <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>ED Instruments</h3></dt>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_ed">
-                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Borrow Instruments</samprit>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_ed">
+                                <div class="col-12 col-sm-6 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_ed_btn">
                                         <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Share Instruments</samprit>
                                     </a>
                                 </div>
                                 <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>CP Codes/Algo</h3></dt>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_cp">
-                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Refer Codes</samprit>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri__cp">
+                                <div class="col-12 col-sm-6 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_cp_btn">
                                         <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Upload Codes</samprit>
                                     </a>
                                 </div>
                                 <dt class="col-12 col-sm-6" style="padding-bottom: 30px; color: floralwhite;"><h3>Extra Materials</h3></dt>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #03DAC5;" id="access_ext">
-                                        <span class="fa fa-edit" style="color: black;"></span><samprit style="color: black;"> Access Extraaass</samprit>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-sm-3 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
-                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri__ext">
+                                <div class="col-12 col-sm-6 align-self-center" style="padding-bottom: 30px; color: floralwhite;">
+                                    <a role="button" class="btn btn-block nav-link" style="background-color: #FD5523;" id="contri_ext_btn">
                                         <span class="fa fa-edit" style="color: floralwhite;"></span><samprit style="color: floralwhite;"> Add Extras</samprit>
                                     </a>
                                 </div>
                             </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contri_note_form" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: rgb(13, 67, 185);">
+                <div class="modal-header" style="background-color: rgb(132, 0, 255); color: floralwhite;">
+                    <h4 class="modal-title">Add Subject Notes </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-content offset-1">
+                        <div class="col-12 col-md-9">
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="yr-strm-prn" name="yr-strm-prn" placeholder="Year-Stream-PRN">
+                                    </div>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Add Notes File here</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10" style="padding-top: 15px;">
+                                        <button type="submit" class="btn" style="background-color: #FD5523;">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contri_ed_form" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: rgb(13, 67, 185);">
+                <div class="modal-header" style="background-color: rgb(132, 0, 255); color: floralwhite;">
+                    <h4 class="modal-title">Add Subject Notes </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-content offset-1">
+                        <div class="col-12 col-md-9">
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="yr-strm-prn" name="yr-strm-prn" placeholder="Year-Stream-PRN">
+                                    </div>
+                                </div>
+                                <div class="form-check form-check-inline" style="color: floralwhite;">
+                                    <input class="form-check-input" type="checkbox" id="instrument_1" value="option1">
+                                    <label class="form-check-label" for="instrument_1"> 1. Roller Scale</label>
+                                </div>
+                                <div class="form-check form-check-inline" style="color: floralwhite;">
+                                    <input class="form-check-input" type="checkbox" id="instrument_2" value="option2">
+                                    <label class="form-check-label" for="instrument_2"> 2. Mini-Drafter</label>
+                                </div>
+                                <div class="form-check form-check-inline" style="color: floralwhite;">
+                                    <input class="form-check-input" type="checkbox" id="instrument_3" value="option3">
+                                    <label class="form-check-label" for="instrument_3"> 3. Set Squares</label>
+                                </div>
+                                <div class="form-check form-check-inline" style="color: floralwhite;">
+                                    <input class="form-check-input" type="checkbox" id="instrument_4" value="option3">
+                                    <label class="form-check-label" for="instrument_4"> 4. Drawing Clips</label>
+                                </div>
+                                <div class="form-check form-check-inline" style="color: floralwhite;">
+                                    <input class="form-check-input" type="checkbox" id="instrument_5" value="option3">
+                                    <label class="form-check-label" for="instrument_5"> 5. Container</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10" style="padding-top: 15px;">
+                                        <button type="submit" class="btn" style="background-color: #FD5523;">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contri_cp_form" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: rgb(13, 67, 185);">
+                <div class="modal-header" style="background-color: rgb(132, 0, 255); color: floralwhite;">
+                    <h4 class="modal-title">Add Subject Notes </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-content offset-1">
+                        <div class="col-12 col-md-9">
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="yr-strm-prn" name="yr-strm-prn" placeholder="Year-Stream-PRN">
+                                    </div>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Add Code file here</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10" style="padding-top: 15px;">
+                                        <button type="submit" class="btn" style="background-color: #FD5523;">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contri_ext_form" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: rgb(13, 67, 185);">
+                <div class="modal-header" style="background-color: rgb(132, 0, 255); color: floralwhite;">
+                    <h4 class="modal-title">Add Subject Notes </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-content offset-1">
+                        <div class="col-12 col-md-9">
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="yr-strm-prn" name="yr-strm-prn" placeholder="Year-Stream-PRN">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" id="Ext-links" name="ext-links" rows="3" placeholder="Add links/Project Topics here"></textarea>
+                                    </div>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Add Extras here</label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10" style="padding-top: 15px;">
+                                        <button type="submit" class="btn" style="background-color: #FD5523;">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -337,11 +514,29 @@
         $("#login").click(function(){
         $('#loginmodal').modal('show');
     });
-    </script>
-    <script>
         $("#formbtn").click(function(){
         $('#form').modal('show');
-    }); 
+    });
+        $(".custom-file-input").on("change", function() {
+        var fileName = $(this).val().split("\\").pop();
+        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+        $("#contri_note_btn").click(function(){
+        $('#contri_note_form').modal('show');
+        $('#form').modal('hide');
+    });
+        $("#contri_ed_btn").click(function(){
+        $('#contri_ed_form').modal('show');
+        $('#form').modal('hide');
+    });
+        $("#contri_cp_btn").click(function(){
+        $('#contri_cp_form').modal('show');
+        $('#form').modal('hide');
+    });
+        $("#contri_ext_btn").click(function(){
+        $('#contri_ext_form').modal('show');
+        $('#form').modal('hide');
+    });
     </script>
 
 </body>
