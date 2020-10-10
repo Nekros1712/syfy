@@ -1,208 +1,288 @@
+/* Basic styling */
+/*Navbar CSS*/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    font-family: sans-serif;
-  }
-  nav {
-    background: #222;
-    padding: 2px 20px;
-    font-family: 'Poppins', sans-serif;
-  }
-  ul {
-    list-style-type: none;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-    color: #00ffff;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+button {
+  display: none;
+}
+nav { 
+  font-family: 'Poppins', sans-serif;
+  padding: 0 30px;
+  overflow: hidden;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; 
+  box-shadow: 0 4px 5px -2px #1b1b1b9a;
 
   }
-  .logo a:hover {
-    text-decoration: none;
-  }
-  .menu li {
-    font-size: 16px;
-    padding: 15px 5px;
-  }
-  .logo-img {
-    width: 220px;
-    height: 80px;
-  }
-  .toggle a {
-    font-size: 20px;
-  }
-  .item.button {
-    border-bottom: 1px #444 solid;
-  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+li:not(.button):hover {
+  text-decoration: none;
+  position: relative;
+  top: -2px;
+  border-bottom: 2px solid #36ff47da;
+  transition: border-bottom .5s;
+}
+.menu .logo:hover {
+border: none;
+position: relative;
+top:0
+}
+.menu-btn {
+  display: none;
+}
+.menu-btn:checked .menu {
+  display: block;
+}
+.menu li {
+  font-size: 15px;
+}
+.menu li a {
+  display: block;
+  padding: 3px 14px;
+}
+
+.logo-img {
+  width: 120px;
+  height: 70%;
+  padding: 0;
+  margin: 0;
   
-  /* Mobile menu */
+}
+
+.button.secondary {
+  border-bottom: 1px solid #888787;
+}
+
+a {
+  padding: 8px 10px;
+}
+li.current-pg a{
+  background-color: #1198ca;
+  border-radius: 3px;
+  color: white;
+  font-size: 17px;
+}
+
+
+/*For Mobile*/
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bars {
+  background-color: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+
+.bars::before,.bars::after {
+  background-color: #999;
+  content: "";
+  height: 2px;
+  position: absolute;
+  width: 18px;
+}
+
+.toggle_bar {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+
+.bars::before {
+  top: 5px;
+}
+.bars::after {
+  top: -5px;
+}
+
+.toggle_bar {
+  cursor: pointer;
+}
+
+
+/*Tablet Menu*/
+
+@media all and (min-width:468px) {
   .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
   }
-  .toggle {
+  .logo {
+    flex: 1;
+  }
+  .item.button{
+    width: auto;
     order: 1;
+    display: block;
+    padding: 16px 10px;
+    
   }
-  .item.button {
+  .toggle_bar {
     order: 2;
   }
+  .button.secondary {
+    border:0;
+  }
+
+  .button a {
+    padding: 7px 15px;
+    
+    border: 1px solid #006d6d;
+    border-radius: 50em;
+
+
+  }
+  .button.secondary a {
+    background-color: #333333;
+  }
+  .button a:hover {
+    transition: all .25s;
+  }
+  .button:not(.secondary) a:hover {
+    background-color: #006d6d;
+    border-color: #005959;
+
+  }
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+  .logo-img {
+    width: 40%;
+    height: 70%;
+  }
+}
+
+
+/* For Desktop*/ 
+
+
+@media all and (min-width:768px) {
+  .logo-img{
+    width: 200px;
+    height: 100%;
+    padding: 0;
+    opacity: 1;
+  }
   .item {
-    width: 100%;
-    text-align: center;
-    order: 3;
+    display: block;
+    width: auto;
+    opacity: 100%;
+  }
+  .toggle_bar {
     display: none;
   }
-  .item.active {
-    display: block;
+  .logo {
+    order: 0;
   }
-  
-  /* Navbar Toggle */
-  .toggle {
-    cursor:pointer;
+  .item {
+    order: 1;
   }
-  .bars {
-    background: #999;
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
+  .button {
+    order: 2;
   }
-  .bars:before,
-  .bars:after {
-    background: #999;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
+  .menu li {
+    padding: 4px 10px;
   }
-  .bars:before {
-    top: 5px;
+  .menu li.button {
+    padding-right: 0;
   }
-  .bars:after {
-    top: -5px;
+  a {
+    background-color: #333333;
+    color: white;
   }
-  
-  /* Tablet menu */
-  @media all and (min-width: 468px) {
-    .menu {
-        justify-content: center;
-    }
-  
-    .logo {
-        flex: 1;
-    }
-  
-    .item.button {
-        width: auto;
-        order: 1;
-        display: block;
-    }
-    .toggle {
-        order: 2;
-    }
-    .button.secondary {
-        border: 0;
-    }
-    .button a {
-        padding: 7.5px 15px;
-        background: teal;
-        border: 1px #006d6d solid;
-        border-radius:50em;
-    }
-    .button.secondary a {
-        background: transparent;    
-    }
-    .button a:hover {
-        text-decoration: none;
-        transition:all .25s;
-    }
-    .button:not(.secondary) a:hover {
-        background: #006d6d;
-        border-color: #005959;
-    }
-    .button.secondary a:hover {
-        color: #ddd;
-    } 
+  #login-mybtn a {
+    background-color: #006d6d;
+    
   }
-  
-  /* Desktop menu */
-  @media all and (min-width: 768px) {
-    .item {
-        display: block;
-        width: auto;
-    }
-    .toggle {
-        display: none;
-    }
-    .logo {
-        order: 0;
-    }
-    .item {
-        order: 1;
-    }
-    .button {
-        order: 2;
-    }
-    .menu li {
-        padding: 15px 10px;
-    }
-    .menu li.button {
-        padding-right: 0;
-    }
+  #login-mybtn a:hover {
+    color: #c0c0c0;
   }
-
-/* Nav Ends */
+}
+/*-----------------------------------*/
+/*Navbar ends here*/
 
 html,body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 
 .jumbotron {
-    background-color: black;
+  background-color: black;
 }
 
 .sep {
-    margin: 0px auto;
-    padding: 20px 0px;
-    border-bottom: 1px ridge;
-    min-height: 300px;
+  margin: 0px auto;
+  padding: 20px 0px;
+  border-bottom: 1px ridge;
+  min-height: 300px;
 }
 
 .footer {
-    background-color: black;
-    color: floralwhite;
-    margin: 0px auto;
-    padding: 20px 0px;
+  background-color: black;
+  color: floralwhite;
+  margin: 0px auto;
+  padding: 20px 0px;
 }
 
 .map-container-2 {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    }
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
 .map-container-2 iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 @media only screen and (min-width: 600px) {
-    .left-pad {
-      padding-left: 100px;
-    }
+  .left-pad {
+    padding-left: 100px;
+  }
 }
