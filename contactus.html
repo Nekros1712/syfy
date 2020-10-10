@@ -15,19 +15,30 @@
 </head>
 <body style="background-color: #0EDE4A;">
     
-   <!-- Navbar starts here -->
+    <!-- Navbar start Here -->
+    <!-- ---------------------------------------------- -->
     <nav>
+    
         <ul class="menu">
-            <li class="logo"><a href="./index.html"><img src="img/logo-edited.png" alt="" class="logo-img"></a></li>
-            <li class="item"><a href="./index.html">Home</a></li>
-            <li class="item"><a href="./aboutus.html">About</a></li>
-            <li class="item"><a href="./contactus.html">Contact Us</a></li>
-            <li class="item"><a href="./services.html">Services</a></li>
-            <li class="item"><a href="./team.html">Team</a></li>
-            <li class="item button"><a href="#">Log In</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav>
+          <li class="logo"><a href="#">
+        <img src="./img/logo-edited.png" class="logo-img" alt="Keiko Corp" />
+      </a>
+      </li>
+          <li class="item"><a href="./index.html">Home</a></li>
+          <li class="item"><a href="./aboutus.html">About</a></li>
+          <li class="item current-pg"><a href="./contactus.html">Contact Us</a></li>
+          <li class="item"><a href="./services.html">Services</a></li>
+          <li class="item"><a href="./team.html">Team</a></li>
+
+          <li class="item button" id="login-mybtn"><a href="#">Login</a></li>
+          <li class="item button secondary"><a href="#">Sign Up</a></li>
+          <li class="toggle_bar"> <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <span class="menu-icon" for="menu-btn"><span class="bars"></span></label></li>
+          
+          </ul>
+      </nav>
+
+      <!-- Navbar Ends Here -->
  
     <div id="loginmodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
@@ -89,10 +100,7 @@
     <div>
         <div>
             <div class="leftpad" style="border-bottom: 1px ridge;">
-                <ol class="col-12 breadcrumb" style="background-color: black;">
-                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                    <li class="breadcrumb-item" style="color: floralwhite;">Contact</li>
-                </ol>
+            
                <h1 class="offset-1" style="padding-top: 20px; padding-bottom: 20px;">Contact Us</h1>
             </div>
         </div>
@@ -515,7 +523,7 @@
     });
 	    
     $(function() {
-    $(".toggle").on("click", function() {
+    $(".toggle_bar").on("click", function() {
         if ($(".item").hasClass("active")) {
             $(".item").removeClass("active");
         } else {

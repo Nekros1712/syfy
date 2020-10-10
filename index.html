@@ -9,32 +9,44 @@
     <meta name="keywords" content="first year, help, engineering drawing, ed instruments, fy notes, fe notes, c-programming">
     <meta name="author" content="Samprit JC">
     <title>shareyourFY</title>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
  
 </head>
  
 <body style="background-color: #0EDE4A;">
- 
-    <!-- Navbar starts here -->
+
+    <!-- Navbar start Here -->
+    <!-- ---------------------------------------------- -->
     <nav>
+    
         <ul class="menu">
-            <li class="logo"><a href="./index.html"><img src="img/logo-edited.png" alt="" class="logo-img"></a></li>
-            <li class="item"><a href="./index.html">Home</a></li>
-            <li class="item"><a href="./aboutus.html">About</a></li>
-            <li class="item"><a href="./contactus.html">Contact Us</a></li>
-            <li class="item"><a href="./services.html">Services</a></li>
-            <li class="item"><a href="./team.html">Team</a></li>
-            <li class="item button"><a href="#">Log In</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav>
+          <li class="logo"><a href="#">
+        <img src="./img/logo-edited.png" class="logo-img" alt="Keiko Corp" />
+      </a>
+      </li>
+          <li class="item current-pg"><a href="./index.html">Home</a></li>
+          <li class="item"><a href="./aboutus.html">About</a></li>
+          <li class="item"><a href="./contactus.html">Contact Us</a></li>
+          <li class="item"><a href="./services.html">Services</a></li>
+          <li class="item"><a href="./team.html">Team</a></li>
+
+          <li class="item button" id="login-mybtn"><a href="#">Login</a></li>
+          <li class="item button secondary"><a href="#">Sign Up</a></li>
+          <li class="toggle_bar"> <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <span class="menu-icon" for="menu-btn"><span class="bars"></span></label></li>
+          
+          </ul>
+      </nav>
+
+      <!-- Navbar Ends Here -->
  
-    <div id="loginmodal" class="modal fade" role="dialog">
+      <div id="loginmodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content" style="background-color: #F9AA33;">
@@ -69,9 +81,9 @@
                 </div>
             </div>
         </div>
-    </div>
- 
-    <header class="jumbotron">
+        </div>
+        
+        <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
@@ -89,9 +101,9 @@
                 </div>
             </div>
         </div>
-    </header>
- 
-    <div class="container jumbotron">
+        </header>
+        
+        <div class="container jumbotron">
         <div class="row row-content">
             <div class="col">
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
@@ -140,14 +152,14 @@
                 </div>
             </div>
         </div>
-    </div>
- 
-    <div class="row row-content align-items-center" style="border-bottom: 1px ridge;">
+        </div>
+        
+        <div class="row row-content align-items-center" style="border-bottom: 1px ridge;">
         <div class="col-12 col-sm">
             <p><h2 style="padding: 20px; padding-left: 100px;">Welcome!</h2></p>
         </div>
-    </div>
-    <div class="row row-content sep align-items-center">
+        </div>
+        <div class="row row-content sep align-items-center">
         <div class="col col-sm order-sm-first offset-1 col-md">
             <div class="media">
                 <img class="d-flex mr-3 img-fluid img-thumbnail align-self-center" src="img/subnote1.jpg" alt="Subject Notes">
@@ -163,8 +175,8 @@
                </div>
             </div>
         </div>
-    </div>
-    <div class="row row-content sep align-items-center">
+        </div>
+        <div class="row row-content sep align-items-center">
         <div class="col col-sm order-sm-first offset-1 col-md">
             <div class="media">
                 <img class="d-flex mr-3 img-fluid img-thumbnail align-self-center" src="img/edinst1.jpg" alt="ED Instruments">
@@ -180,8 +192,8 @@
                </div>
             </div>
         </div>
-    </div>
-    <div class="row row-content sep align-items-center">
+        </div>
+        <div class="row row-content sep align-items-center">
         <div class="col col-sm order-sm-first offset-1 col-md">
             <div class="media">
                 <img class="d-flex mr-3 img-fluid img-thumbnail align-self-center" src="img/codes1.jpg" alt="CP Codes/Algo">
@@ -197,8 +209,8 @@
                </div>
             </div>
         </div>
-    </div>
-    <div class="row row-content sep align-items-center">
+        </div>
+        <div class="row row-content sep align-items-center">
         <div class="col col-sm order-sm-first offset-1 col-md">
             <div class="media">
                 <img class="d-flex mr-3 img-fluid img-thumbnail align-self-center" src="img/extmat1.jpg" alt="Extras">
@@ -214,9 +226,9 @@
                </div>
             </div>
         </div>
-    </div>
- 
-    <footer class="footer">
+        </div>
+        
+        <footer class="footer">
         <div class="container">
             <div class="row">            
                 <div class="col-4 offset-1 col-sm-2">
@@ -255,9 +267,9 @@
                 </div>
            </div>
         </div>
-    </footer>
- 
-    <div id="form" class="modal fade" role="dialog">
+        </footer>
+        
+        <div id="form" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content" style="background-color: rgb(13, 67, 185);">
@@ -299,9 +311,9 @@
                 </div>
             </div>
         </div>
-    </div>
- 
-    <div id="contri_note_form" class="modal fade" role="dialog">
+        </div>
+        
+        <div id="contri_note_form" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content" style="background-color: rgb(13, 67, 185);">
@@ -343,9 +355,9 @@
                 </div>
             </div>
         </div>
-    </div>
- 
-    <div id="contri_ed_form" class="modal fade" role="dialog">
+        </div>
+        
+        <div id="contri_ed_form" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content" style="background-color: rgb(13, 67, 185);">
@@ -403,9 +415,9 @@
                 </div>
             </div>
         </div>
-    </div>
- 
-    <div id="contri_cp_form" class="modal fade" role="dialog">
+        </div>
+        
+        <div id="contri_cp_form" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content" style="background-color: rgb(13, 67, 185);">
@@ -447,9 +459,9 @@
                 </div>
             </div>
         </div>
-    </div>
- 
-    <div id="contri_ext_form" class="modal fade" role="dialog">
+        </div>
+        
+        <div id="contri_ext_form" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content" style="background-color: rgb(13, 67, 185);">
@@ -496,7 +508,10 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+      
+
+
  
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -530,7 +545,7 @@
     });
      
      $(function() {
-    $(".toggle").on("click", function() {
+    $(".toggle_bar").on("click", function() {
         if ($(".item").hasClass("active")) {
             $(".item").removeClass("active");
         } else {
@@ -538,6 +553,21 @@
         }
     });
 });
+
+let ul = document.querySelector('ul');
+var li = document.querySelectorAll('li');
+
+li.forEach(el => {
+
+  el.addEventListener('click', function(){
+  ul.querySelector('.current-pg').classList.remove('current-pg');
+   
+     el.classList.add('current-pg');
+   }); 			
+});
+
+
+
     </script>
  
 </body>
