@@ -1,5 +1,6 @@
 # shareyourFY
 A platform to share and refer materials and experience to help freshers.
 https://nekros1712.github.io/syfy
-### Features
-Here one can contribute by uploading or providing the genuine they have with them as well as one can also take benefits of the materials that are already available on the platform by just accessing it from the website.
+
+## Info
+This site is made whilst learning bootstrap
